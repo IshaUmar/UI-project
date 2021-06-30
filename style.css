@@ -3,9 +3,7 @@
     padding: 0px;
     font-family: 'Poppins', sans-serif;
 }
-
 /* Header part */
-
 .first-head-container{
     display: flex;
     top: 0px;
@@ -233,7 +231,7 @@ padding: 20px;
 #f1btn2{
     font-weight: bold;
     margin-left: 12px;
-    padding: 12px 30px;
+    padding: 2% 3%;
     font-size: 15px;
     border: 2px solid white;
     border-radius: 4.5px;
@@ -271,6 +269,7 @@ padding: 20px;
 }
 .nav2{
     display: inline;
+    text-align: center;
 }
 .nav2 > a{
     padding: 12px;
@@ -337,6 +336,7 @@ padding: 20px;
 #lcol1{
     margin-left: 20px;
     padding-left: 26px;
+    width: 510px;  height: 102px;
 }
 #lcol2{
     margin-left: 20px;
@@ -426,68 +426,68 @@ margin-top: 10px;
 .instagramimages{
     width: 60px; height:60px
 }
+#hireus{
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 2%;
+    background: #3face4;
+    color: white;
+    border-radius: 6px;
+    padding: 3px;
+    border-style: none;
+    font-weight: bold;
+    font-family: arial;
+}
+#creativity{
+    position: absolute;
+margin-top: 40%;
+margin-left: 2%;
+color: white;
+font-size: 230%;
+}
 /* media queries */
-@media only screen  and (max-width: 600px) { 
+@media only screen  and (min-width: 400px ) {
+    .res-container,#foot1,.resnav1,#creativity, #hireus{
+        display: none;
+    } 
+    .topnav,#mytopnav,.reslogo{
+              display: none;
+          }
+}
+@media only screen and (max-width:400px){
+
     .first-head-container ,.navigation-container-1{
         display: none;
     }
-}
-@media only screen  and (min-width: 601px ) {
-    .res-container,#foot1,.resnav1{
+    .image-card-container, .image-card-container2,.foot2{
+        flex-direction: column;
+        padding: 0%;
+    }
+    .image-card-container2{
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    .imagecardpics{
+        width: 400px;
+        padding: 0%;
+    }
+    #lcol2{
         display: none;
-    } 
-   
     }
-    @media only screen  and (max-width: 600px){
-        .image-card-container, .image-card-container2,.foot2{
-            flex-direction: column;
-        }
+    #lcol1{
+        width: 300px;
     }
-    @media only screen  and (max-width: 600px){
-        .image-card-container2{
-            justify-content: center;
-            align-items: center;
-            padding-right: 200px;
-        }
+    .dummy{
+        display: none;
     }
-    @media only screen  and (max-width: 600px){
-     .imagecardpics{
-         width: 400px;
-     }
-    }
-    @media only screen  and (max-width: 600px){
-        #lcol2{
-            display: none;
-        }
-        #lcol1{
-            width: 300px;
-        }
-    }
-
-@media only screen and (max-width:600px){
     #section1backimg{
         width:670px;
         height:500px;
     }
-    .dummy{
-        display: flex;
-        justify-content: left;
-        align-items: left;
-        top: 50%;
-        padding-left: 10%;
-        justify-content: left;
-        align-items: left;
-    }
     .nav2 > a{
-        padding: 42px;}
-        .dummy-pic > aside{
-            position: absolute;
-            padding-right: 200px;
-            padding-left: 20px;
-            margin-top: 125px;
-            color: white;
-            font-size: 42px;
-        }
+        padding: 0%;
+    } 
         .dummy{
             display: none;
         }
@@ -497,14 +497,11 @@ margin-top: 10px;
     border-style: none;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    padding-right: 60px;
-    padding-left: 52px;
     margin-top: 320px;
-    margin-left: 22px;
     border-radius: 10px;
-    padding: 12px;
     text-align: center;
     width: 159.8px;
+    padding: 0%;
 }
 .text{
 border: 3px solid ;
@@ -512,159 +509,146 @@ width: 370px;
 border-bottom: 1px solid #d5d5d5;
  border-right: 1px solid #d5d5d5;
  border-left: 1px solid #d5d5d5;
+ padding: 0%;
 }
 #img1{
-    padding-left: 80px;
 margin: 13px;
+padding: 0%;
 }
 #img2 {
-    padding-left: 80px;
     margin: 13px;
+    padding: 0%;
 }
 #img3 {
-    padding-left: 80px;
     margin: 13px;
+    padding: 0%;
 }
 .col1 > p {
-    padding-left: 20px;
     display: inline;
     width: 362px;
-    padding: 20px;
+    padding: 0%;
 }
 .lastline {
     color: white;
-    /* display: -webkit-inline-box; */
-    padding-left: 15px;
     flex-direction: column;
+    padding: 0%;
 }
 .lastline>img {
 width: max-content;
+padding: 0%;
 }
 #sub-button{
     margin-left: 0px;
+    padding: 0%;
 }
 .lorem{
     padding-top: 70px;
+    padding: 0%;
+    margin-top: 20%;
 }
 #maintextsec2  {
     position: absolute;
-    font-size: 40px;
+    font-size: 180%;
     line-height: 70%;
-    /* border: 3px solid yellow; */
 }
+.f1btn2{
+    padding: 2% 3%;
 }
-
-@media only screen  and (min-width: 601px ){
-    .dumybtn , .dummy-pic > aside  {
-        display: none;
-    }
+.topnav a {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
 }
-/* .resnav1{
-    background-color: white;
-    overflow: hidden;
-  }
-  .resnav1 a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .resnav1 a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .resnav1 a.active {
-    background-color: #04AA6D;
-    color: white;}
-    .resnav1 .icon {
-        display: none;
-      }
-      @media screen and (max-width: 600px) {
-        .resnav1 a {display: none;}
-        .resnav1 a.icon {
-          float: right;
-          display: block;
-        }
-      }
-      @media screen and (max-width: 600px) {
-        .resnav1 .responsive {position: relative;}
-        .resnav1 .responsive a.icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .resnav1 .responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-      } */
-@media screen and (max-width: 600px) {
-  .topnav a {display: none;}
+.topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
-  }
-}
+  } 
+  .image-card-container2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    padding-left: 0px;
+    width: 100%;
+    }  
+    .image-card-container3{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .imagecardpics{
+          width: 100%;
+      }
+      .text{
+          width: 100%;
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
+      }
+      /* #lcol1{
+          width:0px;
+      } */
+      .last-section{
+          padding: 40px;
+      }
 
+}
 .topnav > a{
     text-decoration: none;
     color: black;
     /* box-shadow: 0px 1px 1px 0px; */
 }
-     @media only screen and (max-width:600px){
-        .image-card-container2{
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            float: left;
-            padding-left: 0px;
+    @media only screen and (max-width:300px){
+        #hireus{
+            margin-top: 100%;
+        }
+        .imagecardpics {
+            width: 100%;  
+        }
+        #f1btn2{
+            margin-top: 2%;
+        }
+        #our-recent{
+            text-align: center;
+        }
+        #img1{
+            width:100%;
+        }
+        #img2{
+            width:100%;
+        }
+        #img3{
+            width:100%;
+        }
+        .text{
             width: 100%;
-            }  
-            .image-card-container3{
-                margin-top: 20px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                float: left;
-                padding-left: 0px;
-                width: 100%;
-                
-            }
-      }
-      @media only screen  and (min-width: 601px ){
-          .topnav,#mytopnav,.reslogo{
-              display: none;
-          }
-      }
-      .topnav{
-          box-shadow: #272727;
-      }
-      .topnav a:hover{
-        background-color: #3face4;
-    }
-    .topnav.responsive a:hover{
-        background-color: black;
-
-    }
+        }
+        .last-section{
+            padding: 100px;
+        }
+        .col1 > p{
+            margin-left: 9%;
+        }
+        #girlpic1{
+            margin-left: 32%;
+            width: 100%;
+        }
+    } 
+      
+      
